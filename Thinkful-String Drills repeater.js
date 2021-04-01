@@ -21,3 +21,9 @@ function repeater(string, n) {
 
 
 }
+
+//also you could just use repeat method
+
+function repeater(string, n) {
+    return string.repeat(n)
+}
