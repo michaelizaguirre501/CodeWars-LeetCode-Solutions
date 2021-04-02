@@ -11,7 +11,7 @@
 
 function smallEnough(a, limit) {
     let counter = 0
-    a.forEach((x, i) => {
+    a.forEach(x => {
         if (x > limit) {
             counter += 1
         }
