@@ -20,7 +20,8 @@
 //I must remember to also replace '_' in my regex
 
 function reverseLetter(str) {
-    str = str.replace(/[0-9]|\W|_/g, '');
-    return str.split('').reverse().join('')
-  
-  }
+  str = str.replace(/[0-9]|\W|_/g, '');
+  return str.split('').reverse().join('')
+
+
+}
