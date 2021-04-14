@@ -15,4 +15,5 @@ function removeChar(str) {
     str.pop()
     return str.join('')
 
+
 }
