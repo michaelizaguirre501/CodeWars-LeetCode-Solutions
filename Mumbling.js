@@ -7,7 +7,6 @@
 // accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 // accum("cwAt") -> "C-Ww-Aaa-Tttt"
 
-
 // Solution--
 // I am intaking a string, the problem is asking me to repeat each character of that string the amount of times
 // based on its indexed position in the string with the first character in uppercase and the rest in lower case
