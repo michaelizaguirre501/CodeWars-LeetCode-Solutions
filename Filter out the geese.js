@@ -15,5 +15,4 @@ function gooseFilter(birds) {
 
 gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"])
 gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
-
 gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"])
