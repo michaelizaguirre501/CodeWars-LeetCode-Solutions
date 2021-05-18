@@ -14,7 +14,7 @@ function first(arr, n) {
     let answer = []
     if (n == null) {
         return [arr[0]]
-    } else if (n + 1 == 1) {
+    } else if (n == false) {
         return answer
     } else {
         return arr.slice(0, n)
@@ -24,5 +24,5 @@ function first(arr, n) {
 
 //Test Cases--
 var arr = ['a', 'b', 'c', 'd', 'e'];
-first(arr)
+console.log(first(arr, 0))
 first(arr, 2)
