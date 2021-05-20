@@ -15,54 +15,53 @@
 // i will create a function that when passed into a foreach of the meal values array will add the elements as keys to my new object and increase the value by 1 OR set the value to 1
 
 function orderFood(list) {
-    const arr = list.map((x, i) => x = x.meal);
-    let obj = {};
-    let objectify = keys => {
-        obj[keys] = ++obj[keys] || 1
-    }
-    arr.forEach(objectify);
-    return obj
+  const arr = list.map((x, i) => (x = x.meal));
+  let obj = {};
+  let objectify = (keys) => {
+    obj[keys] = ++obj[keys] || 1;
+  };
+  arr.forEach(objectify);
+  return obj;
 }
 
-
-
 //TESTCASES--
-var list1 = [{
-        firstName: 'Noah',
-        lastName: 'M.',
-        country: 'Switzerland',
-        continent: 'Europe',
-        age: 19,
-        language: 'C',
-        meal: 'vegetarian'
-    },
-    {
-        firstName: 'Anna',
-        lastName: 'R.',
-        country: 'Liechtenstein',
-        continent: 'Europe',
-        age: 52,
-        language: 'JavaScript',
-        meal: 'standard'
-    },
-    {
-        firstName: 'Ramona',
-        lastName: 'R.',
-        country: 'Paraguay',
-        continent: 'Americas',
-        age: 29,
-        language: 'Ruby',
-        meal: 'vegan'
-    },
-    {
-        firstName: 'George',
-        lastName: 'B.',
-        country: 'England',
-        continent: 'Europe',
-        age: 81,
-        language: 'C',
-        meal: 'vegetarian'
-    },
+var list1 = [
+  {
+    firstName: "Noah",
+    lastName: "M.",
+    country: "Switzerland",
+    continent: "Europe",
+    age: 19,
+    language: "C",
+    meal: "vegetarian",
+  },
+  {
+    firstName: "Anna",
+    lastName: "R.",
+    country: "Liechtenstein",
+    continent: "Europe",
+    age: 52,
+    language: "JavaScript",
+    meal: "standard",
+  },
+  {
+    firstName: "Ramona",
+    lastName: "R.",
+    country: "Paraguay",
+    continent: "Americas",
+    age: 29,
+    language: "Ruby",
+    meal: "vegan",
+  },
+  {
+    firstName: "George",
+    lastName: "B.",
+    country: "England",
+    continent: "Europe",
+    age: 81,
+    language: "C",
+    meal: "vegetarian",
+  },
 ];
 
-orderFood(list1) //answer = { vegetarian: 2, standard: 1, vegan: 1 };
+console.log(orderFood(list1)); //answer = { vegetarian: 2, standard: 1, vegan: 1 };

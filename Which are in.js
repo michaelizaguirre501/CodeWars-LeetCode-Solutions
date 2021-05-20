@@ -18,29 +18,29 @@
 // Don't mutate the inputs.
 
 //SOLUTION--
-// we are taking in 2 arrays, and checking which elements of array1 are substrings of array2 
+// we are taking in 2 arrays, and checking which elements of array1 are substrings of array2
 // my return must be an array that is sorted lexicographically and not contain duplicates
 //im going to loop thru array 1 then loop thru array 2 inside of the first loop,
 // then check if the second looped elements include the first and push the first element into an answer array
-//next i will sort that array 
+//next i will sort that array
 //finally i will use the power of google to remove duplicates by splitting the sorted answer array into a new set and re joining it into an array
 
 function inArray(array1, array2) {
-    let answer = []
-    array1.forEach((x, i) => {
-        array2.forEach((y, j) => {
-            if (y.includes(x)) {
-                answer.push(x)
-            }
-        })
-    })
-    answer.sort()
-    return ([...new Set(answer)])
+  let answer = [];
+  array1.forEach((x, i) => {
+    array2.forEach((y, j) => {
+      if (y.includes(x)) {
+        answer.push(x);
+      }
+    });
+  });
+  answer.sort();
+  return [...new Set(answer)];
 }
 
 //TESTCASES--
 
 let a1 = ["xyz", "live", "strong"];
-let a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+let a2 = ["lively", "alive", "harp", "sharp", "armstrong"];
 
-inArray(a1, a2)
+console.log(inArray(a1, a2));
