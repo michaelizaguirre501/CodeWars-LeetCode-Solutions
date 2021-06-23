@@ -8,7 +8,7 @@
 //I will sort the given array from lowest number to highest
 //and then return the sum of the first two elements
 
-function sumTwoSmallestNumbers(numbers) {
+const sumTwoSmallestNumbers=(numbers)=>{
   let sorted = numbers.sort((a, b) => a - b);
   return sorted[0] + sorted[1];
 }
