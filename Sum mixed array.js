@@ -9,7 +9,7 @@
 // I need to change all elements in the array we are taking in as a parameter into numbers
 //then reduce (=>a+b) and return the sum
 
-const sumMix = (x) => x.map(Number).reduce((a, b) => a + b);
+const sumMix = (x) => x.map(Number).reduce((a, b) => a + b, 0);
 
 //TEST CASES--
 sumMix([9, 3, "7", "3"]);
