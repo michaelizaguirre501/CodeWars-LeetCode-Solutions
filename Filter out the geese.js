@@ -5,14 +5,22 @@
 //The geese are any strings in the following array, which is pre-populated in your solution:
 
 //SOLUTION--
-// i will filter thru birds removing all instances where a geese is present 
+// i will filter thru birds removing all instances where a geese is present
 
 function gooseFilter(birds) {
-    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-    return birds.filter(bird => geese.indexOf(bird) < 0);
-};
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter((bird) => !geese.includes(bird));
+}
 //TESTCASES--
 
-gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"])
-gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
-gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"])
+gooseFilter([
+  "Mallard",
+  "Hook Bill",
+  "African",
+  "Crested",
+  "Pilgrim",
+  "Toulouse",
+  "Blue Swedish",
+]);
+gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]);
+gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]);
