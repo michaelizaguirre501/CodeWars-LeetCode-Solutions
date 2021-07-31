@@ -51,6 +51,7 @@ Math.floor = function (number) {
 };
 //TESTCASES--
 console.log(Math.round(0.4), 0, "Math.round(0.4)");
+console.log(Math.round(0.5), 1, "Math.round(0.5)");
 
 console.log(Math.ceil(0.4), 1, "Math.ceil(0.4)");
 console.log(Math.ceil(0.5), 1, "Math.ceil(0.5)");
