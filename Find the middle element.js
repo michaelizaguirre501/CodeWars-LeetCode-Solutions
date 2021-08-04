@@ -8,11 +8,11 @@
 //input-- array of 3 numbers
 //output-- number (the index of the middle value)
 //i will spread the array(create copy) sort it and stre that in a variable
-//i will then find the middle element of the sorted array. using that number i will search the original array and find the index of that value
+//i will then find the middle element of the sorted array [1]. using that number i will search the original array and find the index of that value(indexOf)
 
 var gimme = (inputArray) => {
   let sortedArray = [...inputArray].sort((a, b) => a - b);
-  return inputArray.indexOf(sortedArray[Math.trunc(sortedArray.length / 2)]);
+  return inputArray.indexOf(sortedArray[1]);
 };
 
 //TESTCASES--
