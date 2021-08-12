@@ -23,7 +23,7 @@ console.log(reverseStr("The reverse method would be much easier"));
 //I split the string and then call reduce on it adding the next element to the accumulator resulting in a reversed string
 
 const reverseReduce = (str) => str.split("").reduce((a, b) => b + a, "");
-console.log("-------reduce--------");
+console.log("--------reduce---------");
 console.log(reverseReduce("Hello"));
 console.log(reverseReduce("If you don't know"));
 console.log(reverseReduce("Now you Know"));
