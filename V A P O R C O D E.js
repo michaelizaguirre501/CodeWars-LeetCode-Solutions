@@ -18,6 +18,12 @@ function vaporcode(string) {
     .join("  ");
 }
 
+//NO MAP
+
+// function vaporcode(string) {
+//   return string.replaceAll(/ /g, "").toUpperCase().split("").join("  ");
+// }
+
 console.log(
   vaporcode("Let's go to the movies"),
   "L  E  T  '  S  G  O  T  O  T  H  E  M  O  V  I  E  S"
